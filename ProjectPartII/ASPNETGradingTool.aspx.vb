@@ -10,7 +10,7 @@ Public Class ASPNETGradingTool
         Using reader As New StreamReader(filePath)
             While Not reader.EndOfStream
                 Dim line As String = reader.ReadLine()
-                Dim fields As String() = line.Split(","c)
+                Dim fields As String() = line.Split(",")
 
                 If fields.Length = 2 Then
                     Dim studentName As String = fields(0).Trim()
